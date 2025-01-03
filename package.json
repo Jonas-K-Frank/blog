@@ -14,21 +14,28 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.1.0",
-    "gatsby": "^5.14.1",
-    "gatsby-plugin-image": "^3.14.0",
-    "gatsby-plugin-mdx": "^5.14.0",
-    "gatsby-plugin-sharp": "^5.14.0",
-    "gatsby-plugin-styled-components": "^6.14.0",
-    "gatsby-remark-images": "^7.14.0",
-    "gatsby-source-filesystem": "^5.14.0",
-    "gatsby-transformer-sharp": "^5.14.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "babel-plugin-styled-components": "^2.1.4",
+    "gatsby": "^3.3.1",
+    "gatsby-plugin-image": "^1.15.0",
+    "gatsby-plugin-mdx": "^2.15.0",
+    "gatsby-plugin-sharp": "^3.15.0",
+    "gatsby-plugin-styled-components": "^4.15.0",
+    "gatsby-remark-images": "^5.12.0",
+    "gatsby-source-filesystem": "^3.15.0",
+    "gatsby-transformer-sharp": "^3.15.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
-    "react-icons": "^5.4.0"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "prettier": "2.2.1"
+  },
+  "resolutions": {
+    "graphql": "^15.5.0"
   },
   "repository": {
     "type": "git",

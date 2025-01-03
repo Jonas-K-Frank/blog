@@ -27,6 +27,7 @@ const Wrapper = styled.div`
   max-width: 500px;
   border-radius: var(--radius);
   padding: 1rem 1.5rem;
+  margin: 5rem auto;
   background: var(--clr-grey-10);
   text-align: center;
   #value {
