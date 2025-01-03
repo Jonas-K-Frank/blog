@@ -1,90 +1,45 @@
 ---
-title: Backroads Tours
-slug: backroads-tours
-image: ./images/gatsby-1.png
+title: Gatsby Tutorial
+slug: gatsby-tutorial
+image: ./images/html-1.png
 date: 2025-03-01
 author: john smith
-category: HTML&CSS
+category: Gatsby
 readTime: 50
 ---
 
-
 import { Link } from "gatsby";
-import { FiInfo } from "react-icons/fi";
-import { Counter, LikeButton } from "../../components/Complete";
 
+_I'm baby humblebrag neutra taiyaki af vice bespoke locavore fanny pack_ ramps vexillologist succulents. Normcore etsy pour-over adaptogen skateboard fashion axe, bushwick food truck beard lumbersexual master cleanse actually deep v. **Retro cardigan raw denim franzen kickstarter you probably haven't heard of them literally** aesthetic snackwave four dollar toast. Keffiyeh synth umami, helvetica yr flexitarian jean shorts banh mi cardigan leggings letterpress paleo intelligentsia narwhal.
 
+<blockquote>
+	I'm baby tumblr fanny pack tousled seitan. Man bun shaman yr, bushwick fam
+	hammock williamsburg kombucha keytar VHS. Chambray street art authentic,
+</blockquote>
 
-# Her er en MDX side
-
-**Lorem Ipsum is simply dummy text of the printing and typesetting industry.** Lorem Ipsum has been the industry's standard dummy text ever _since the 1500s_, when an unknown printer took a galley of type and scrabled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-[Den vilde side](https://www.google.com)
-
-<div className= "code">
-
-```js
-const firstName = "John";
-const lastName = "Doe";
-```
-
-</div>
-
-<p><br /></p>
-
-## Hvordan er det med en h2?
-
-<Link to="/" className="btn btn-center">
-	Tilbage til forsiden
-</Link>
-
-<p><br /></p>
-
-<div className= "nice-text">
-
-<h3>Her er en pæn tekst</h3>
-<FiInfo className="nice-text-icon" />
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
-in a piece of classical Latin literature from 45 BC, making it over 2000 years
-old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-Virginia, looked up one of the more obscure Latin words, consectetur, from a
-Lorem Ipsum passage, and going through the cites of the word in classical
-literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
-Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
-ethics, very popula
-
-</div>
-
-<h2 className="margin-top">Her er en counter</h2>
-
-<Counter />
+<blockquote display="info">
+	I'm baby tumblr fanny pack tousled seitan. Man bun shaman yr, bushwick fam
+	hammock williamsburg kombucha keytar VHS. Chambray street art authentic,
+</blockquote>
 
 ```jsx
 import React from "react";
-import styled from "styled-components";
+
 const Counter = () => {
 	const [count, setCount] = React.useState(0);
 	return (
-		<Wrapper>
-			<h1>counter</h1>
-			<span id="value">{count}</span>
-			<div className="btn-container">
-				<button className="btn dec-btn" onClick={() => setCount(count - 1)}>
-					decrease
-				</button>
-				<button className="btn reset-btn" onClick={() => setCount(0)}>
-					reset
-				</button>
-				<button className="btn inc-btn" onClick={() => setCount(count + 1)}>
-					increase
-				</button>
-			</div>
-		</Wrapper>
+		<section className="counter">
+			<h4>show some love to MDX</h4>
+			<h4>likes {count}</h4>
+			<button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+				i like mdx
+			</button>
+		</section>
 	);
 };
+export default Counter;
 ```
 
-<LikeButton />
-
-
+<Link to="/posts" className="btn center-btn">
+	all posts
+</Link>
